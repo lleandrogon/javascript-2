@@ -1,7 +1,14 @@
-var idade, eleitor, resultado;
-idade = 71;
-eleitor = (idade < 18) ? "Não, Eleitor" : "Sim, eleitor"
+const carro = {
+    marca: "ford", 
+    modelo: "ka", 
+    ano: 2015, 
+    placa: "ABC-1234",
+    buzina: function(){
+        alert('Biiiiiiiiiiiiii')
+    },
+    completo: function(){
+        return "A marca é " + this.marca + " e o modelo é: " + this.modelo;
+    }
+};
 
-resultado = (idade === 65 || idade === 72);
-
-alert(resultado)
+console.log(carro.completo());
