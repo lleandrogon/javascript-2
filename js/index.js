@@ -1,26 +1,5 @@
-function eventoClick(){
-    //alert('Acionou um evento de click');
-    document.body.style.backgroundColor = "yellow";
-}
+const pessoa = ["Dimitri", "Teixeira", 30, "Professor"]; //array
+const x = "Dimitri";
 
-function eventoDblClick(){
-    alert('Evento de click duplo');
-}
+alert(Array.isArray(x)); //true
 
-function viraVermelho(){
-    let div = document.getElementById('teste');
-    div.style.backgroundColor = "red";
-}
-
-function viraAzul(){
-    let div = document.getElementById('teste');
-    div.style.backgroundColor = "blue";
-}
-
-function mudou(){
-    console.log("mudou");
-}
-
-function teclaPressionada(){
-    console.log('Tecla pressionada');
-}
