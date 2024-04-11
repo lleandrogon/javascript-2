@@ -1,8 +1,6 @@
-const numeros = [40,100,1,5,25,10];
-const maior20 = numeros.filter(filtragem);
+const carros = ["Gol", "Fusca", "Brasília", "Del Rey", "Chevette"];
+var tamanho = carros.length;
 
-document.getElementById("teste").innerHTML = maior20;
-
-function filtragem(value, index, array) {
-    return value > 20;
+for(let i = 0; i < tamanho; i++){
+    document.getElementById("teste").innerHTML += carros[i] + " - ";
 }
