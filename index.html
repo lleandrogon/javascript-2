@@ -6,33 +6,24 @@
     <title>Aprendendo JS</title>
     <style>
         body {
-            text-align: center;
             font-size: 1.2em;
         }
 
-        button {
-            font-size: 20px;
-            color: white;
-            padding: 50px;
-            margin-top: 10px;
-        }
-
-        .start {
-            background-color: rgb(11, 188, 20);
-        }
-
-        .stop {
-            background-color: tomato;
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>Aprendendo JavaScript</h1>
-    <h2 id="tempo">0</h2>
-    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
-    <button onclick="pararContagem()" class="stop">Parar Contagem</button>
 
+    <center>
+        <input id="cep" type="text" placeholder="Digite o seu CEP">
+        <button onclick="buscarCEP()">Buscar</button>
+        <p id="texto"></p>
+    </center>
 
+    <script src="js/class_carro.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
