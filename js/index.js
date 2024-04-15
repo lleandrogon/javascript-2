@@ -1,6 +1,12 @@
-const carros = ["Gol", "Fusca", "Brasília", "Del Rey", "Chevette"];
-var tamanho = carros.length;
-
-for(let i = 0; i < tamanho; i++){
-    document.getElementById("teste").innerHTML += carros[i] + " - ";
+class Carro {
+    constructor(valor1, valor2, valor3){
+        this.marca = valor1;
+        this.modelo = valor2;
+        this.ano = valor3;
+    }
 }
+
+const uno = new Carro("Fiat", "Uno", 2001);
+const gol = new Carro("Volkswagen", "Gol", 2013);
+console.log(uno);
+console.log(gol);

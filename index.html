@@ -7,15 +7,30 @@
     <style>
         body {
             text-align: center;
+            font-size: 1.2em;
+        }
+
+        button {
+            font-size: 20px;
+            color: white;
+            padding: 50px;
+            margin-top: 10px;
+        }
+
+        .start {
+            background-color: rgb(11, 188, 20);
+        }
+
+        .stop {
+            background-color: tomato;
         }
     </style>
 </head>
-<body onresize="alert('Houve um redimensionamento')">
+<body>
     <h1>Aprendendo JavaScript</h1>
-    <p id="teste"></p><br>
-    <select id="ano">
-        <option selected disabled>Selecione o ano</option>
-    </select>
+    <h2 id="tempo">0</h2>
+    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+    <button onclick="pararContagem()" class="stop">Parar Contagem</button>
 
 
     <script src="js/index.js"></script>
